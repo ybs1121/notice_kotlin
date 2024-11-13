@@ -33,12 +33,11 @@ class NoticeService(
 
     fun findById(id: Long): NoticeRes {
         val notice = noticeRepository.findById(id)
-
         if (notice.isPresent) {
-            return convertToNoticeRes(notice.get())
+            return notice.get().toNoticeRes()
         }
 
-        throw IllegalArgumentException("Not found notice")
+        throw NoticeNotFoundException(id)
     }
 
     fun deleteById(id: Long): String {
@@ -54,4 +53,14 @@ class NoticeService(
         }
         throw IllegalArgumentException("Not found notice")
     }
+
+    private fun Notice.toNoticeRes() = NoticeRes( // 확장함수
+        id = id,
+        title = title,
+        content = content,
+        register = register
+    )
+
 }
+
+class NoticeNotFoundException(id: Long) : RuntimeException("Notice not found with id: $id")

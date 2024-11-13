@@ -3,16 +3,14 @@ package com.study.notice_kotlin.entity
 import com.study.notice_kotlin.dto.NoticeAdd
 import com.study.notice_kotlin.dto.NoticeMod
 import jakarta.persistence.*
-import lombok.Getter
 import java.time.LocalDateTime
 
 @Entity
-@Getter
-class Notice constructor(
+class Notice(
     var title: String,
     var register: String,
     var content: String,
-    var createAt: LocalDateTime,
+    val createAt: LocalDateTime,
     var updateAt: LocalDateTime,
 ) {
 
