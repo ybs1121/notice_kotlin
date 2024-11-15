@@ -1,7 +1,7 @@
-package com.study.notice_kotlin.entity
+package com.study.notice_kotlin.v1.entity
 
-import com.study.notice_kotlin.dto.NoticeAdd
-import com.study.notice_kotlin.dto.NoticeMod
+import com.study.notice_kotlin.v1.dto.NoticeAdd
+import com.study.notice_kotlin.v1.dto.NoticeMod
 import jakarta.persistence.*
 import java.time.LocalDateTime
 

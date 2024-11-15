@@ -1,9 +1,9 @@
-package com.study.notice_kotlin.controller
+package com.study.notice_kotlin.v1.controller
 
-import com.study.notice_kotlin.dto.NoticeAdd
-import com.study.notice_kotlin.dto.NoticeMod
-import com.study.notice_kotlin.dto.NoticeRes
-import com.study.notice_kotlin.service.NoticeService
+import com.study.notice_kotlin.v1.dto.NoticeAdd
+import com.study.notice_kotlin.v1.dto.NoticeMod
+import com.study.notice_kotlin.v1.dto.NoticeRes
+import com.study.notice_kotlin.v1.NoticeService
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.*
 

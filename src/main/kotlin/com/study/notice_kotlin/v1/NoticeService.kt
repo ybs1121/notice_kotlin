@@ -1,11 +1,10 @@
-package com.study.notice_kotlin.service
+package com.study.notice_kotlin.v1
 
-import com.study.notice_kotlin.NoticeRepository
-import com.study.notice_kotlin.dto.NoticeAdd
-import com.study.notice_kotlin.dto.NoticeMod
-import com.study.notice_kotlin.dto.NoticeRes
-import com.study.notice_kotlin.dto.NoticeRes.Companion.convertToNoticeRes
-import com.study.notice_kotlin.entity.Notice
+import com.study.notice_kotlin.v1.dto.NoticeAdd
+import com.study.notice_kotlin.v1.dto.NoticeMod
+import com.study.notice_kotlin.v1.dto.NoticeRes
+import com.study.notice_kotlin.v1.dto.NoticeRes.Companion.convertToNoticeRes
+import com.study.notice_kotlin.v1.entity.Notice
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 

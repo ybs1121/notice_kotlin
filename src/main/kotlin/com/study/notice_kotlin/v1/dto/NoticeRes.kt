@@ -1,6 +1,6 @@
-package com.study.notice_kotlin.dto
+package com.study.notice_kotlin.v1.dto
 
-import com.study.notice_kotlin.entity.Notice
+import com.study.notice_kotlin.v1.entity.Notice
 
 data class NoticeRes(
     val id: Long,
